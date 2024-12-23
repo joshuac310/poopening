@@ -1,0 +1,29 @@
+print("Welcome to Life Simulator.")
+print("Your mission is to prepare for the day.")
+quest1 = input("You wake up in a large comfy bed, "
+               "after getting adjusted, what do you do?"
+               " Stay in bed or wake up? type 's' or 'w'.").lower()
+
+if quest1 == 'w':
+    quest2 =input("You get out of bed but really need the toilet, "
+                        "do you brush your teeth first or after? y or n ").lower()
+    if quest2 == 'y':
+        quest3 = input("You start to brush but notice the mirror is falling. "
+                             "Do you 'stay', 'move' or 'catch the mirror'? ").lower()
+        if quest3 == 'move':
+            print("Youre safe and ready for the day!")
+        elif quest3 == 'catch the mirror':
+            print("You catch the mirror but it breaks and cuts into you, "
+                  "severing an artery, you bleed out and die while a "
+                  "bridge troll laughs in the distance")
+        elif quest3 == 'stay':
+            print("you dont move in time but a happy bridge troll "
+                  "stops the mirror from falling. you thank them but havent "
+                  "noticed the troll already ate your legs and you are now troll food")
+        else:
+            print("a bridge troll sneaks up on you and makes you choke on the toothbrush.DEAD")
+    else:
+        print("you go to poop first but fall down the toilet "
+              "and die when the bridge troll comes to kill you")
+else:
+    print("you go back to sleep and can try again tomorow")
